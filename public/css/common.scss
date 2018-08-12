@@ -1,0 +1,54 @@
+$white: #fff;
+$left-sidebar-width: 280px;
+$text-gray: #757575;
+$border-gray: #757575;
+
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+      -ms-transition: $duration;
+          transition: $duration;
+}
+
+@mixin box-shadow() {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(26,26,26,.1);
+  box-shadow: 0 1px 3px 0 rgba(26,26,26,.1);
+  border-radius: 3px;
+}
+
+.ease-in-out {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* @font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open-Sans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open-Sans/OpenSans-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open-Sans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open-Sans/OpenSans-Bold.ttf.ttf);
+  font-weight: bold;
+} */

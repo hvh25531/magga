@@ -1,0 +1,334 @@
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-layout {
+  padding: 0 !important;
+}
+
+.ant-list-vertical .ant-list-item-extra {
+  margin-left: 20px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .ant-list-vertical .ant-list-item-extra {
+    margin-left: 0 !important;
+  }
+}
+
+#page-posts .ant-list-item-action li {
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+#page-posts .ant-list-item-action li em {
+  display: none;
+}
+
+.ant-modal {
+  top: 30px !important;
+  max-width: 800px;
+}
+
+.vertical-center-modal .album-modal {
+  top: 20px !important;
+  width: 97% !important;
+  max-width: none;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .vertical-center-modal .album-modal {
+    margin: 0;
+  }
+
+  .vertical-center-modal .album-modal .ant-modal-body {
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}
+
+.vertical-center-modal .album-modal .ant-modal-body {
+  padding: 0;
+}
+
+.vertical-center-modal .album-modal img {
+  display: block;
+  margin: auto;
+}
+
+.modal-col-right {
+  padding: 15px !important;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.modal-col-right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-col-right::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-col-right::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal-col-right img {
+  max-width: 200px;
+}
+
+.ant-modal-close-x {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+.author-card .ant-card-body {
+  padding: 15px;
+  height: 95px;
+}
+
+.author-avatar .ant-form-item,
+.img-upload .ant-form-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%)
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  margin-top: 0;
+  z-index: 2;
+}
+
+.ql-snow .ql-picker-label {
+  line-height: 25px;
+  top: -7px;
+}
+
+.ql-snow .ql-picker-options .ql-picker-item:focus {
+  outline: none;
+}
+
+/* tile uploaded pictures */
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+
+.add-more-btn {
+  border: none;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+.img-upload {
+  position: relative;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-upload .ant-form-explain,
+.author-avatar .ant-form-explain {
+  width: max-content;
+}
+
+.post-img {
+  position: relative;
+  /* min-width: 100px;
+  min-height: 100px; */
+  width: fit-content;
+}
+
+.post-uploader {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.zoom-icon,
+.delete-icon,
+.post-img .edit-icon,
+.ant-card .edit-icon {
+  position: absolute;
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding: 5px;
+  background: rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  border-color: rgba(0,0,0,0.09);
+}
+
+.zoom-icon,
+.delete-icon {
+  right: 5px;
+  top: 5px;
+}
+
+.post-img .edit-icon,
+.ant-card .edit-icon {
+  left: 5px;
+  top: 5px;
+}
+.zoom-icon:hover,
+.delete-icon:hover,
+.post-img .edit-icon:hover,
+.ant-card .edit-icon:hover {
+  color: white;
+}
+
+#categories .post-img .ant-input {
+  min-width: 160px;
+  background: rgba(255,255,255,0.7);
+}
+
+#categories .post-img .ant-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#categories .post-img .ant-input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#categories .post-img .ant-input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#categories .post-img .ant-input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.img-uploader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  background-color: rgba(255,255,255,0.5) !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+#categories .ant-upload.ant-upload-select-picture-card {
+  margin: 0 auto;
+}
+
+.ant-card-actions > li > span {
+  width: 100%;
+}
+
+.ant-card-actions i.anticon-edit,
+.ant-card-actions i.anticon-check,
+.ant-card-actions i.anticon-close,
+.category-flex-item .ant-spin {
+  width: 50%;
+}
+
+/* .main-content .ant-card-body, */
+.albums-list .ant-card-body {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .5));
+}
+
+.card-album .ant-card-meta-title,
+.card-album .ant-card-meta-description {
+  color: #fff !important;
+}
+
+.ant-card-meta-title {
+  margin-bottom: 0;
+}
+
+.category-flex-item.editing .ant-card-body,
+.category-flex-item.adding .ant-card-body {
+  padding: 12px 11px;
+}
+
+.ant-card-body .ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-layout-content {
+  /* overflow-x: unset !important; */
+  padding-top: 20px !important;
+  position: relative;
+}
+
+.ant-layout-content .ant-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%)
+}
+
+.main-content .ant-collapse-borderless > .ant-collapse-item {
+  border: 0 !important;
+}
+
+.category-flex-item .ant-spin {
+  position: static;
+  transform: none;
+  -webkit-transform: none;
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.author-avatar {
+  position: relative;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  border-color: rgba(0, 0, 0, 0.09);
+}
+
+.quill.disabled {
+  position: relative;
+}
+
+.quill.disabled::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
